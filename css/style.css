@@ -1,0 +1,231 @@
+:root{
+    --text-color:#333333;
+    --bg-color:#eeeeee;
+}
+:root.dark{
+    --text-color:#eeeeee;
+    --bg-color:#333333;
+}
+    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/*======= common css end ========*/
+
+body{
+    background: #16222A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family:  sans-serif;
+    
+}
+
+#digitalClock{
+    background-color: coral;
+
+}
+
+#analogClock{
+    background-color: rgba(37, 77, 125, 0.944);
+}
+
+#stopwatch{
+    background-color: cadetblue;
+}
+
+.clock{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.716);
+    border-radius: 10px;
+    padding: 20px;
+    background: rgba(255,255,255,0.1);
+}
+
+.clock clock_card{
+    padding: 0 20px;
+}
+
+.clock h2{
+    font-size: 50px;
+    color: #111;
+}
+
+.clock span{
+    font-size: 30px;
+}
+
+
+/*========= LIghtmode and Darkmode ==========*/
+
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--bg-color);
+    font-family: sans-serif;
+
+}
+
+#light_darkmode{
+    height: 100vh;
+    width: 100%;
+    padding: 20px 20px;
+    margin: 10px 10px;
+}
+
+#btn{
+    margin: 10px;
+    width: 60px;
+    height: 60px;
+    font-size: 50px;
+    border-radius: 5px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 0 10px -3px var(--text-color);
+    padding-left: 10px 10px;
+}
+
+h1{
+    font-size: 50px;
+    color: var(--text-color);
+}
+p{
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+/*======== Analog Clock ==========*/
+
+
+
+#analogClock .clock{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#analogClock .clock span{
+    position: absolute;
+    transform: rotate(calc(30deg * var(--i)));
+    inset: 12px;
+    display: block;
+    text-align: center;
+}
+
+#analogClock .clock span b{
+    transform: rotate(calc(-30deg * var(--i)));
+    display: inline-block;
+    font-size: 20px;
+
+}
+
+#analogClock .clock::before{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #fff;
+    z-index: 2;
+}
+
+
+#analogClock  .hand{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+#analogClock  .hand i{
+    position: absolute;
+    background-color: var(--clr);
+    width: 4px;
+    height: var(--h);
+    border-radius: 8px;
+}
+
+
+/*=========== Stopwatch ===========*/
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    padding: 1rem;
+    position: relative;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.time{
+    padding: 1rem;
+    font-size: 3rem;
+}
+
+h1 .p{
+    color: #f8f8f8;
+}
+
+button{
+    padding: o.4rem 1rem;
+    margin: 0 0.2rem;
+    align-items: center;
+    font-size: 30px;
+    border-radius: 3px;
+    border: 1px solid #f8f8f8;
+}
+
+
+
+button:hover{
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #f8f8f8;
+
+}
+

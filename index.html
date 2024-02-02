@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <section id="digitalClock">
+
+    <div class="clock">
+        <div class="clock_card">
+            <h2 id="hour">00</h2>
+        </div>
+        <span>:</span>
+        <div class="clock_card">
+            <h2 id="min">00</h2>
+        </div>
+        <span>:</span>
+        <div class="clock_card">
+            <h2 id="sec">00</h2>
+        </div>
+        <div class="clock_card">
+            <h2 id="am">am</h2>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-------------Light Mode and Dark Mode -------------->
+            <section id="light_darkmode">
+                <div class="container">
+            <button id="btn">
+                <i class="fa-solid fa-sun"></i>
+            </button>
+            <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, saepe?</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt unde aut libero, ea minus modi consectetur quod distinctio itaque. Libero ullam quas quisquam. Adipisci iure repudiandae distinctio aperiam soluta quis, assumenda cumque omnis, placeat eius deleniti vel hic ipsum earum laborum veritatis porro perferendis dolorum eos commodi debitis ipsa sint quod necessitatibus. Voluptatem quia dolor consequuntur veniam aliquid nam optio ipsam corrupti, iusto, aspernatur dicta facere! Hic iste, aut, doloribus quidem voluptates aperiam aspernatur temporibus atque molestias, a iusto placeat magnam. Consequatur ut nostrum exercitationem a, minima quis corporis, repudiandae necessitatibus, esse expedita reiciendis voluptatum. Voluptatem perferendis possimus adipisci doloribus corrupti, minima fuga debitis, facere officiis repellat pariatur ex corporis maiores? Iste fuga temporibus ex. Quod ullam expedita aspernatur officia enim, reiciendis dolor possimus distinctio? Quidem amet obcaecati eveniet! Quae non tempora iusto pariatur nobis temporibus, est odio molestias repellendus aliquid explicabo debitis vel recusandae omnis repellat soluta provident repudiandae sed perspiciatis placeat sit magni beatae a fugiat? Consequatur, qui molestias voluptas inventore aut amet mollitia libero maiores voluptatum neque natus optio perspiciatis velit debitis porro ut iste saepe? Doloribus doloremque laboriosam aut porro deserunt quibusdam voluptate aspernatur nesciunt enim maxime ex voluptas voluptatibus, sapiente ullam quisquam, velit eaque nobis..</p>
+               </div>
+            </section>
+
+
+            <!------------ Analog Clock ------------>
+            <section id="analogClock">
+
+                <div class="container">
+                    <div class="clock">
+                        <div style="--clr:#ff3d58;--h:74px;" id="ahour" class="hand"><i></i></div>
+                        <div style="--clr:#00a6ff;--h:84px;" id="amin" class="hand"><i></i></div>
+                        <div style="--clr:#ffffff;--h:94px;" id="asec" class="hand"><i></i></div>
+            
+                        <span style="--i:1;"><b>1</b></span>
+                        <span style="--i:2;"><b>2</b></span>
+                        <span style="--i:3;"><b>3</b></span>
+                        <span style="--i:4;"><b>4</b></span>
+                        <span style="--i:5;"><b>5</b></span>
+                        <span style="--i:6;"><b>6</b></span>
+                        <span style="--i:7;"><b>7</b></span>
+                        <span style="--i:8;"><b>8</b></span>
+                        <span style="--i:9;"><b>9</b></span>
+                        <span style="--i:10;"><b>10</b></span>
+                        <span style="--i:11;"><b>11</b></span>
+                        <span style="--i:12;"><b>12</b></span>
+                    </div>
+                </div>
+
+
+        </section>
+
+
+        <!-----------StopWatch----------->
+
+        <section id="stopwatch">
+            <div class="container">
+                <h1>Stopwatch</h1>
+                <p class="time">
+                    <span id="minutes">00</span>:<span id="seconds">00</span>:<span id="tens">00</span>
+                </p>
+                <button id="start">Start</button>
+                <button id="stop">Stop</button>
+                <button id="reset">Reset</button>
+                
+            </div>
+        </section>
+
+
+
+
+    <script src="./js/app.js"></script>
+    
+</body>
+</html>
